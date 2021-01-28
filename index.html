@@ -1,36 +1,43 @@
 <head>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--useful in scroll to top-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+<meta name="keywords" content="footer, address, phone, icons" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <!-- Navbar-->
-<div class="nav-100">
+<div class="nav-100" id="home">
 <header class="header">
     <nav class="navbar navbar-expand-lg fixed-top py-3">
         <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Lorem Ipsium</a>
             <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
-            <span class="navbar-toggler-icon my-toggler"></span>
-            <i class="fa fa-bars"></i>
+                <i class="fa fa-bars"></i>
             </button>
             
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Testimonials</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Services</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+                    <li class="nav-item active"><p onclick="home()" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></></li>
+                    <li class="nav-item"><p onclick="aboutus()" class="nav-link text-uppercase font-weight-bold">About</=></li>
+                    <li class="nav-item"><p onclick="testimonial() " class="nav-link text-uppercase font-weight-bold">Testimonials</a></li>
+                    <li class="nav-item"><p onclick="services()" class="nav-link text-uppercase font-weight-bold">Services</=></li>
+                    <li class="nav-item"><p onclick="contact()" class="nav-link text-uppercase font-weight-bold">Contact</=></li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
 <div class="pt-5 text-white">
-      <div class="below-nav">
+      <div class="below-nav" >
         <header class="py-5 mt-5 text-center">
             <h1 class="display-4 font-weight-bold">Lorem Ipsium </h1>
             <h1 class=" ">Lorem Ipsium dolor sit amet </h1>
@@ -39,9 +46,13 @@
       </div>
 </div>
 </div>
-<!-- second section -->
+<!-- ABOUTUS section -->
+<a id="button"></a>
 <div class="container-mod 2nd-section">
-    <div class="pt-5 text-white" data-aos="fade-left">
+    <div class="text-center text-white">
+        <h1 class="about-us-heading">ABOUT US</h1>
+    </div>
+    <div class="pt-5 text-white" data-aos="fade-left"  id="about-us">
         <div class="py-5" >
             <p class="lead">Lorem ipsum dolor sit amet, <strong class="font-weight-bold">consectetur adipisicing </strong>elit. Explicabo consectetur odio voluptatum facere animi temporibus, distinctio tempore enim corporis quam <strong class="font-weight-bold">recusandae </strong>placeat! Voluptatum voluptate, ex modi illum quas nam distinctio.</p>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -54,13 +65,12 @@
 </div>
 <!-- third section -->
 
-<div class="slideInDown animated" style="padding-top:2rem;padding-bottom:2rem;min-height: 80vh;
-    background-color: #0cbaba;
-    background-image: linear-gradient( 
-315deg
- , #0cbaba 0%, #380036 74%);">
+<div class="slideInDown animated" style="padding-top:2rem;padding-bottom:2rem;height: 75vh;background-color: #9e8fb2;background-image: linear-gradient(315deg, #9e8fb2 0%, #a7acd9 74%);">
+    <div class="text-center text-white">
+        <h1 class="services-heading ">SERVICES</h1>
+    </div>
 
-    <div class="flip-card" data-aos="fade-left">
+    <div class="flip-card" data-aos="fade-left" id="services">
         <div class="flip-card-inner" >
             <div class="flip-card-front">
                 <img src="images/services.png" >
@@ -72,11 +82,12 @@
    
 	            <img src="images/services.png" style="width: 140px;
                     height: 140px;">
-	            <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-	            <a href="#"><button type="button" class="btn btn-outline-danger">Know More</button></a>
+	            <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	            <a href="#"><button type="button" class="btn btn-outline-danger back-btn">Know More</button></a>
             </div>
         </div>
     </div>
+    
 
     <div class="flip-card" data-aos="fade-up" >
         <div class="flip-card-inner">
@@ -87,8 +98,8 @@
             <div class="flip-card-back">
 	            <img src="images/services.png" alt="Avatar" style="width: 140px;
                     height: 140px;">
-                <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                <a href="#"><button type="button" class="btn btn-outline-danger">Know More</button></a>
+                <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <a href="#"><button type="button" class="btn btn-outline-danger back-btn">Know More</button></a>
 	        </div>
         </div>
     </div>
@@ -103,12 +114,93 @@
             <div class="flip-card-back">
 	            <img src="images/services.png" alt="Avatar" style="width: 140px;
                 height: 140px;">
-                <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                <a href="#"><button type="button" class="btn btn-outline-danger">Know More</button></a>
+                <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <a href="#"><button type="button" class="btn btn-outline-danger back-btn">Know More</button></a>
 	        </div>
         </div>
     </div>
 </div>
+
+<!--TESTIMONIALS-->
+<div class="testimonials">
+    <div class="text-center text-white ">
+        <h1 class="test-heading">TESTIMONIALS</h1>
+    </div>
+    <div class="quotes page-width" data-aos="zoom-in" id="testimonial">
+
+        <div class="quotes-slide slideshow__slide--active"  data-slider-slide-index="0" aria-hidden="false" tabindex="-1">
+            <blockquote class="quotes-slider__text text-left">
+                <span class="quote-icon">
+                  <svg aria-hidden="true" focusable="false" role="presentation"  class="icon icon-quote" viewBox="0 0 41 35">
+                        <path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z"                         ></path>
+                    </svg>
+                </span>
+    
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <cite>Lorem ipsum</cite>
+            </blockquote>
+        </div>
+    
+        <div class="quotes-slide slideshow__slide--active" data-slider-slide-index="1" aria-hidden="false" tabindex="-1">
+            <blockquote class="quotes-slider__text text-left">
+                <span class="quote-icon"><svg aria-hidden="true" focusable="false" role="presentation"
+                        class="icon icon-quote" viewBox="0 0 41 35">
+                        <path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z">
+                        </path>
+                    </svg>
+                </span>
+    
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <cite>Lorem ipsum</cite>
+            </blockquote>
+        </div>
+    
+        <div  class="quotes-slide slideshow__slide--active"  data-slider-slide-index="2"  aria-hidden="false" tabindex="-1">
+            <blockquote class="quotes-slider__text text-left">
+                <span class="quote-icon"><svg aria-hidden="true" focusable="false" role="presentation"
+                        class="icon icon-quote" viewBox="0 0 41 35">
+                        <path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z"></path>
+                    </svg>
+                </span>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <cite>Lorem ipsum</cite>
+            </blockquote>
+        </div>
+    
+    </div>
+
+</div>
+
+
+
+		<footer class="footer-distributed" id="contact-us">
+
+			<div class="footer-left">
+      
+				<h3 style="font-family: 'Ubuntu Condensed', sans-serif;font-weight:bold;font-size:3rem;" >CONTACT DETAILS</h3>
+
+
+<p class="text-color_f" ><span class="icon icon-color"><i class="fas fa-map-marker-alt" style="margin-right:10px;"></i></span>Lorem Ipsium,Lorem Ipsium</p>
+
+<p class="text-color_f"><span class="icon icon-color"><i class="fas fa-phone-square" style="margin-right:10px;"></i></span> 0802 111201 475444</p>
+
+<p class="text-color_f"><span class="icon icon-color"><i class="fas fa-envelope" style="margin-right:10px;"></i></span>abcd@myknot.com </p>
+
+			</div>
+
+            <div>
+              
+            </div>
+        </footer>
+
 <style>
 
 /*
@@ -118,27 +210,39 @@
 * ==========================================
 *
 */
+
+a:not([href]):not([tabindex]) {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
 .navbar {
     transition: all 0.4s;
 }
 
 .navbar .nav-link {
     color: #fff;
+    cursor: pointer;
 }
-.navbar-toggler-icon{
-    background-image: url("images/navicon2.png");
-    height:27px;
+.navbar-toggler{
+    padding: .25rem .75rem;
+    font-size: 1.75rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
 }
+
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: #fff;
+    color: grey;
+    transition: 0.4s;
     text-decoration: none;
 }
 
 .navbar .navbar-brand {
     color: #fff;
 }
-
 
 /* Change navbar styling on scroll */
 .navbar.active {
@@ -152,12 +256,16 @@
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #555;
+    color: black;
+    transition: 0.4s;
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.1);
     text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-    color: #555;
+    color: black;
 }
 
 
@@ -180,27 +288,25 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 
 }
 .display-4{
-    margin-top: 3rem;
+    margin-top: 9rem;
     font-size: 6rem;
     margin-bottom:2rem;
 }
 
-/*
-*
-* ==========================================
-* CARDS FLIP
-* ==========================================
-*
+
+/* 
+ABOUT US 
+
 */
-.cards-bg{
-    background-color: #0cbaba;
-background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-
+.about-us-heading{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-shadow: 1px 1px 4px #000000;
+    border-bottom: 2px solid #ffffff;
 }
-.text-small {
-    font-size: 0.9rem !important;
-}
-
 .container-mod{
     width: 100%;
     padding-right: 8rem;
@@ -212,6 +318,77 @@ font-weight:bold;
     background-color: #d387ab;
 background-image: linear-gradient(315deg, #d387ab 0%, #b279a7 74%);
 }
+.pt-5, .py-5 {
+    padding-top: 1rem!important;
+}
+
+#button {
+  display: inline-block;
+  background-color: #fc9842;
+background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
+
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*
+*
+* ==========================================
+* CARDS FLIP
+* ==========================================
+*
+*/
+.back-btn{
+    margin-bottom: 1rem;
+}
+.services-heading{
+    font-family: 'Barlow', sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    padding-top: 1rem;
+    text-shadow: 1px 1px 4px #000000;
+    padding-bottom: 1rem;
+}
+.cards-bg{
+background-color: #9e8fb2;
+background-image: linear-gradient(315deg, #9e8fb2 0%, #a7acd9 74%);
+
+}
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+
 
 /*flip cards */
 .card-text{
@@ -220,13 +397,14 @@ font-weight:bold;
 }
 .flip-card {
   width: 200px;
-  height: 450px;
+  height: auto;
   margin-left:1%;
 	width: 32%;
 	float: left;
   padding: 0px 15px 0px 15px;
   perspective: 1000px;
-  margin-bottom: 2em;
+  margin-bottom: 0rem;
+  display: block;
 
 }
 @media only screen and (max-width: 980px){
@@ -236,7 +414,7 @@ font-weight:bold;
 }
 .flip-card-inner {
   width: 100%;
-  height: 100%;
+  height: 70%;
   text-align: center;
   transition: transform 1.0s;
   transform-style: preserve-3d;
@@ -249,7 +427,7 @@ font-weight:bold;
 
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 100%;
+  width: 100%; 
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -263,7 +441,7 @@ font-weight:bold;
 }
 .flip-card-front img{
     border-radius: 50%;
-    margin-top: 8rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     width: 170px;
     height: 150px;
@@ -285,6 +463,255 @@ font-weight:bold;
 font-family: 'Barlow', sans-serif;
 font-weight:bold;
 }
+
+
+/*TESTIMONIALS*/
+* {
+  box-sizing: border-box;
+}
+.test-heading{
+    text-shadow: 1px 1px 4px #000000;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.page-width {
+  margin: auto;
+}
+.text-left {
+  text-align: left;
+}
+.testimonials{
+    background-color: #7f5a83;
+background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+padding-top: 1rem;
+
+
+}
+.quotes{
+
+
+    display: flex;
+    padding: 0rem 3rem;
+    align-items: center;
+    min-height: 70vh;
+
+}
+
+.quotes-slide {
+  width: 33%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  background-color: white;
+  opacity: .4;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 1px #d5d5d5;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  transition: all .5s ease;
+  outline: none;
+}
+
+.quotes-slide--active {
+    transform: scale(1.2);
+    z-index: 10;
+    opacity: 1;
+    border: none;
+    box-shadow: 1px 0px 10px 5px #eaeaea;
+    color: #222222;
+}
+blockquote {
+  margin: 0;
+}
+cite{
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: .9rem;
+}
+cite::before {
+    content: '\2014 \0020';
+}
+.icon {
+  width: 25px;
+  height: 25px;
+  fill: #1a73e8;
+}
+
+/* FOOTER STYLES*/
+
+
+
+footer{
+	bottom: 0;
+}
+.footer-distributed{
+background-color: #3bb78f;
+background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font-family: 'Ubuntu Condensed', sans-serif;
+
+	padding: 55px 50px;
+    
+}
+@media (min-width: 1800px) {
+	.footer-distributed{
+	min-height:40vh;
+	}
+
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.footer-distributed .footer-left{
+	width: 45%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+  
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+   text-shadow: 1px 1px 4px #000000;
+}
+
+.footer-distributed h3 span{
+	color:  #ff8c00;
+}
+
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+
+
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+
+
+.footer-distributed .footer-right{
+	width: 45%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+
+}
+.icon-color{
+    color:white;
+}
+.text-color_f{
+    color:white;
+    margin-top:2rem;
+   font-weight: 200;
+   font-size: 21px;
+   text-shadow: 1px 1px 4px #000000;
+}
 </style>
 <script>
 $(function () {
@@ -296,13 +723,74 @@ $(function () {
         }
     });
 });
+
+
+function home(){
+    var element = document.getElementById("home");
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}); 
+}
+function aboutus(){
+    var element = document.getElementById("about-us");
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}); 
+}
+function services(){
+    var element = document.getElementById("services");
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}); 
+}
+function testimonial(){
+    var element = document.getElementById("testimonial");
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}); 
+}
+function contact(){
+    var element = document.getElementById("contact-us");
+    element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}); 
+}
+
+
+//scroll to top
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+//TESTIMONIALS
+
+const testimonialPage = document.querySelector(".quotes-slide[data-slider-slide-index='1']");
+testimonialPage.classList.add("quotes-slide--active");
+
+
+document.querySelector(".quotes").addEventListener("mouseout", function(){
+  document.querySelector(".quotes-slide--active").classList.remove("quotes-slide--active")
+  document.querySelector(".quotes-slide[data-slider-slide-index='1']").classList.add("quotes-slide--active")
+});
+
+
+document.querySelectorAll(".quotes-slide").forEach( 
+  elem => elem.addEventListener("mouseover", function(){
+    document.querySelector(".quotes-slide--active").classList.remove("quotes-slide--active")
+    this.classList.add("quotes-slide--active")
+  })
+)
+
+
+
 </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
         offset:400,
-        duration:700,
+        duration:500,
         once:true
     });
-  </script>
+</script>
 
