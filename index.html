@@ -189,10 +189,10 @@
                 <div class="p-2 flex-fill bd-highlight mb-5 mb-md-0">
                     <img src="images/myknot-jpg.jpeg" class="myknot-logo-footer"alt=""> 
                     <br>
-                    <small>Copyright &copy 2019</small>
+                    <small style="color: #00bfff;font-weight: bold;">Copyright &copy Myknot-Infosystem 2021</small>
                 </div>
-                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
-                    <h5 class="places">BYDGOCZCZ</h5>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0" style="color: #00bfff;font-weight: bold;">
+                    <h5 class="places" style="color: white;font-weight: bold;">BYDGOCZCZ</h5>
                     <p class="mb-0">Bydgoszcz Centrum Burnesa</p>
                     <p class="mb-0">ul Pzzenmdcwa 25, ibsura 24,</p>
                     <p class="mb-0">B5-7GB Bydgosrdz, Poland</p>
@@ -209,7 +209,7 @@
                     <div class="fa fa-instagram px-2"></div>
                 </div>
                 <div class="p-2 row flex-fill bd-highlight justify-content-left text-white">
-                    <div class="p-2 d-lg-flex">
+                    <div class="p-2 d-lg-flex" style="color: #00bfff; font-weight: bold;">
                         <div class="p-2 flex-fill d-flex bd-highlight">
                             <a onclick="services()" class="footer-links">Services</a></div>
                         <div class="p-2 flex-fill d-flex bd-highlight"><a onclick="aboutus()"  class="footer-links">about-us</a></div>
@@ -229,10 +229,7 @@
 
 
 <style>
-.nav-100{
-    background-color: #000000;
-background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-}
+
         .navbar {
     transition: all 0.4s;
 }
@@ -257,7 +254,7 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: grey;
+    color: #65cff3 ;
     transition: 0.4s;
     text-decoration: none;
 }
@@ -278,11 +275,11 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: black;
-    transition: 0.4s;
+    color: #65cff3 ;
+    transition: 0.3s;
     -webkit-transform: scale(1.0);
     -ms-transform: scale(1.0);
-    transform: scale(1.1);
+    transform: scale(1.05);
     text-decoration: none;
 }
 
@@ -302,8 +299,10 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
     }
 }
 .nav-100{
-    background-color: #000000;
-background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .below-nav{
     height:100vh;
@@ -363,7 +362,7 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
         .about-us-heading{
             font-family: 'Barlow', sans-serif;
             font-weight: bolder;
-            font-size: 3rem;
+            font-size: 2.4rem;
             padding-top: 1rem;
             padding-bottom: 1rem;
             text-shadow: 1px 1px 4px #000000;
@@ -376,9 +375,11 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
             margin-right: auto;
             margin-left: auto;
             font-family: 'Barlow', sans-serif;
-        font-weight:bold;
-            background-color: #d387ab;
-        background-image: linear-gradient(315deg, #d387ab 0%, #b279a7 74%);
+        font-weight:500;
+        background: #457fca;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         }
         @media only screen and (max-width: 500px){
             .container-mod{
@@ -388,31 +389,29 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
     margin-right: auto;
     margin-left: auto;
     font-family: 'Barlow', sans-serif;
-    font-weight: bold;
-    background-color: #d387ab;
-    background-image: linear-gradient(
-315deg
-, #d387ab 0%, #b279a7 74%);
+    font-weight: 500;
+    background: #457fca;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5691c8, #457fca); 
         }
         .about-us-heading {
             font-family: 'Barlow', sans-serif;
             font-weight: bolder;
-            font-size: 3rem;
+            font-size: 2.4rem;
             padding-top: 1rem;
             padding-bottom: 1rem;
             text-shadow: 1px 1px 4px #000000;
             border-bottom: 2px solid #ffffff;
         }
-        }
+}
         .pt-5, .py-5 {
             padding-top: 1rem!important;
         }
         
         #button {
           display: inline-block;
-          background-color: #fc9842;
-        background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
-        
+          background-color: #00bfff;
+          
           width: 50px;
           height: 50px;
           text-align: center;
@@ -438,6 +437,16 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
         #button:hover {
           cursor: pointer;
           background-color: #333;
+          
+        }
+        #button::after:hover {
+          content: "\f077";
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 2em;
+          line-height: 50px;
+          color:  #00bfff;
         }
         #button:active {
           background-color: #555;
@@ -458,15 +467,41 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
  .services-heading{
             font-family: 'Barlow', sans-serif;
             font-weight: bolder;
-            font-size: 3rem;
+            font-size: 2.4rem;
             padding-top: 1rem;
             text-shadow: 1px 1px 4px #000000;
             padding-bottom: 1rem;
-            color: black;
+            color: white;
 }
+@media (min-width: 1200px){
+.container {
+    max-width: 1440px;
+}
+}
+@media (min-width: 992px){
+    .container {
+    max-width: 1300px;
+}
+}
+@media (min-width: 768px){
+    .container {
+    max-width: 988px;
+}
+}
+@media (min-width: 576px){
+    .container {
+    max-width: 1800px;
+}
+
+}
+
 .mt-2, .my-2 {
-    margin-top: 1.5rem!important;
-    margin-bottom: 2rem;
+    margin-top: 0rem!important;
+    margin-bottom: 0rem;
+    background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 img{
   height:150px;
@@ -485,9 +520,32 @@ img{
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     border-radius: .25rem;
     margin: 1rem;
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width: 450px){
+    .card{
+        position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: .25rem;
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    }
 }
 .item{
   padding-left:5px;
@@ -548,20 +606,21 @@ img{
 
 /*TESTIMONIALS*/
 .test-heading{
-            text-shadow: 1px 1px 4px #000000;
-            font-family: 'Barlow', sans-serif;
-            font-weight: bolder;
-            font-size: 3rem;
+    text-shadow: 1px 1px 4px #000000;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bolder;
+    font-size: 2.4rem;
+    margin-top: 0.5rem;
 
         }
         @media only screen and (max-width: 450px){
             .test-heading{
-            text-shadow: 1px 1px 4px #000000;
-            font-family: 'Barlow', sans-serif;
-            font-weight: bolder;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            margin-top: 1rem;
+                text-shadow: 1px 1px 4px #000000;
+                font-family: 'Barlow', sans-serif;
+                font-weight: bolder;
+                font-size: 2.4rem;
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
         }
         .quotes{
             display: inline-block;
@@ -581,8 +640,10 @@ img{
           text-align: left;
         }
         .testimonials{
-            background-color: #7f5a83;
-        background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+            background: #2c3e50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         padding-top: 1rem;
         
         
@@ -682,24 +743,27 @@ p {
     font-size: 14px
 }
 .myknot-logo-footer{
-    width: 10rem;
-    height: 8rem;
+    width: 7rem;
+    height: 4rem;
     border-radius: 50%;
+    margin-bottom: 1rem;
 }
 .container-fluid-foot {
-    background-color: #4527A0
+    background-color: black;
+  
 }
 .footer-links{
     cursor: pointer;
 }
 .top-part {
-    background-color: #512DA8
+    background-color:black;
 }
 
 .center-content {
     margin-top: 120px;
     margin-bottom: 120px
 }
+
 @media (max-width: 600.98px) {
     .row-foot{
     display: -webkit-box;
@@ -726,7 +790,7 @@ p {
 }
 
 .line {
-    border-top: 2px solid #ffffff;
+    border-top: 2px solid  #00bfff;
     width: 90% !important;
 }
 
@@ -739,7 +803,7 @@ p {
 }
 
 .grey-text {
-    color: lightgrey
+    color:  #00bfff
 }
         
 </style>
