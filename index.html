@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--useful in scroll to top-->
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -36,11 +36,22 @@
                     
                     <div id="navbarSupportedContent" class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active"><p onclick="home()" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></></li>
-                            <li class="nav-item"><p onclick="aboutus()" class="nav-link text-uppercase font-weight-bold">About</=></li>
-                            <li class="nav-item"><p onclick="testimonial() " class="nav-link text-uppercase font-weight-bold">Testimonials</a></li>
-                            <li class="nav-item"><p onclick="services()" class="nav-link text-uppercase font-weight-bold">Services</=></li>
-                            <li class="nav-item"><p onclick="contact()" class="nav-link text-uppercase font-weight-bold">Contact</=></li>
+                            <li class="nav-item active"><p onclick="home()" class="nav-link text-uppercase font-weight-bold  other-nav-head">Home <span class="sr-only">(current)</span></></li>
+                            <li class="nav-item "><p onclick="aboutus()" class="nav-link text-uppercase font-weight-bold other-nav-head">About</=></li>
+                                <li class="nav-item dropdown">
+                                    <p class="nav-link dropdown-toggle look text-uppercase font-weight-bold " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    SERVICES</=>
+                                    </p>
+                                    <div class="dropdown-menu  text-uppercase" aria-labelledby="navbarDropdownMenuLink">
+                                      <a class="dropdown-item  text-uppercase font-weight-bold-1" id="change" href="b2b_mailing_list.html">B2B Mailing List</a>
+                                      <a class="dropdown-item text-uppercase font-weight-bold-1" id="change" href="#">B2B-Data-Appending</a>
+                                      <a class="dropdown-item text-uppercase font-weight-bold-1" id="change" href="#">Customised-LIst-Building</a>
+                                      <a class="dropdown-item text-uppercase font-weight-bold-1" id="change" href="#">List-Management-Services</a>
+                                    </div>
+                            </li>
+                            <li class="nav-item "><p onclick="testimonial() " class="nav-link text-uppercase font-weight-bold other-nav-head">Testimonials</a></li>
+                                
+                            <li class="nav-item "><p onclick="contact()" class="nav-link text-uppercase font-weight-bold other-nav-head">Contact</=></li>
                         </ul>
                     </div>
                 </div>
@@ -203,7 +214,7 @@
                     <br>
                     <small style="color: #00bfff;font-weight: bold;">Copyright &copy Myknot-Infosystem 2021</small>
                 </div>
-                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0" style="color: #00bfff;font-weight: bold;">
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0 address" style="color: #00bfff;font-weight: bold;">
                     <h5 class="places" style="color: white;font-weight: bold;">BYDGOCZCZ</h5>
                     <p class="mb-0">Bydgoszcz Centrum Burnesa</p>
                     <p class="mb-0">ul Pzzenmdcwa 25, ibsura 24,</p>
@@ -257,6 +268,31 @@
     border-radius: 50%;
 }
 }
+.font-weight-bold-1{
+    font-weight: 637!important;
+    padding: 0.9rem;
+    font-size: 13px;
+}
+.font-weight-bold-1:hover{
+    font-weight: 637!important;
+    padding: 0.9rem;
+    font-size: 13px;
+    background-color: #54a0f1;
+    color:white;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0px;
+    margin-bottom: -3px;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
 .navbar .nav-link {
     color: #ffffff;
     cursor: pointer;
@@ -265,11 +301,22 @@
     padding: .25rem .75rem;
     font-size: 1.75rem;
     line-height: 1;
-    background-color: transparent;
+    color: #54a0f1;
     border: 1px solid transparent;
     border-radius: 0.25rem;
+    
 }
-
+.navbar .nav-link {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.service{
+    padding-bottom: .5rem;
+}
+.services:hover{
+    
+}
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
     color: black ;
@@ -285,6 +332,7 @@
 .navbar.active {
     background: #fff;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 8px -10px black;
 }
 
 .navbar.active .nav-link {
@@ -292,7 +340,12 @@
     padding-bottom: 0.8rem;
     font-size: 1rem;
 }
-
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
     color: #65cff3 ;
@@ -878,8 +931,8 @@ background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, F
         /* FOOTER STYLES*/
         
 
-p {
-    font-size: 14px
+.address{
+    font-size: 17px;
 }
 .p-2 {
     padding-top: 0.5rem!important;

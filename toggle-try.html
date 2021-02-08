@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--useful in scroll to top-->
+</head>
+<body>
+    <div id="showmenu">Click Here</div>
+    <div class="menu" style="display: none;">
+        <ul>
+            <li>Button1</li>
+            <li>Button2</li>
+            <li>Button3</li>
+        </ul>
+    </div>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#showmenu').click(function() {
+            $('.menu').slideToggle("fast");
+    });
+});
+</script>
+</body>
+</html>

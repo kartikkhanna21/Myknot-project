@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-       
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--useful in scroll to top-->
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -26,7 +29,7 @@
     <div class="nav-100" id="home">
         <header class="header">
             <nav class="navbar navbar-expand-lg fixed-top py-3">
-                <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Lorem Ipsium</a>
+                <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><img src="images/myknot-jpg.jpeg" class="myknot-logo-nav" alt=""></a>
                     <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
                         <i class="fa fa-bars"></i>
                     </button>
@@ -47,8 +50,8 @@
         <div class="pt-5 text-white">
             <div class="below-nav" >
               <header class="py-5 mt-5 text-center">
-                  <h1 class="display-4 font-weight-bold">Lorem Ipsium </h1>
-                  <h1 class="under-display">Lorem Ipsium dolor sit amet </h1>
+                  <h1 class="display-4 font-weight-bold">Myknot Infosystems</h1>
+                  <h1 class="under-display"></h1>
                   </p>
               </header>
             </div>
@@ -75,47 +78,55 @@
 
     <!-- third section -->
         
-    <div class="container-fluid container-fluid-card" id="services">
+    <div class="container mt-2" id="services">
         <div class="text-center text-white">
             <h1 class="services-heading ">SERVICES</h1>
         </div>
-        <div class="row">
-          <div class="card-deck">
-            <div class="card" data-aos="fade-left">
+        <!--   <div class="card card-block mb-2">
+            <h4 class="card-title">Card 1</h4>
+            <p class="card-text">Welcom to bootstrap card styles</p>
+            <a href="#" class="btn btn-primary">Submit</a>
+          </div>   -->
+          <div class="row">
+              <div>
+                  <p class="services-desc">SmartRaySolutions,offers a number of services to its customers to help their businesses grow. Be it telemarketing or reaching clients through email; our range of services from B2B mailing lists to customised list building or B2B data appending will offer clear-cut solutions that you are looking for.</p>
+              </div>
+            <div class="col-md-3 col-sm-6 item" >
+              <div class="card item-card card-block" data-aos="fade-up">
               
-              <div class="card-block">
-                <h4 class="card-title text-center">Service 1</h4>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                
-              </div>
-            </div>
-            <div class="card" data-aos="fade-up">
-              
-              <div class="card-block ">
-                <h4 class="card-title  text-center">Service 2</h4>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                
-              </div>
-            </div>
-            <div class="card" data-aos="fade-right">
-              
-              <div class="card-block ">
-                <h4 class="card-title  text-center">Service 3</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                
-              </div>
-            </div>
-            <div class="card" data-aos="fade-left">
-                
-                <div class="card-block ">
-                  <h4 class="card-title text-center">Service 4</h4>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  
-                </div>
-              </div>
+            <img src="images/B2B-Mailing.png" >
+                <h5 class="card-title  mt-3 mb-3 text-center">B2B Mailing List</h5>
+                <p class="card-text text-center">Ease your business process by choosing from our wide variety of mailing lists.</p> 
           </div>
+            </div>
+            <div class="col-md-3 col-sm-6 item"  >
+              <div class="card item-card card-block" data-aos="fade-up">
+              
+            <img src="images/Customised-LIst-Building.png">
+                <h5 class="card-title  mt-3 mb-3 text-center">Customised List building</h5>
+                <p class="card-text text-center">Clean data that has been customised for every domain.</p> 
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-6 item"  >
+              <div class="card item-card card-block" data-aos="fade-up">
+              
+            <img src="images/B2B-Data-Appending.png" >
+                <h5 class="card-title  mt-3 mb-3 text-center">B2B Data Appending</h5>
+                <p class="card-text text-center">Let us, help you filling in missing information of outdated details and contacts within your database.</p> 
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-6 item">
+              <div class="card item-card card-block"  data-aos="fade-up">
+              
+            <img src="images/List-Management-Services.png">
+                <h5 class="card-title  mt-3 mb-3 text-center" >List Management Services</h5>
+                <p class="card-text text-center">Smartray's one stop solution for all your database needs.</p> 
+          </div>
+            </div>    
+          </div>
+          
         </div>
-      </div>
+        
 
       <!--Testimonials-->
       <div class="testimonials">
@@ -133,10 +144,12 @@
                     </span>
         
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <p>Thank you for your outstanding customer service. We have purchased lists in the past where we have had a horrible experience to the point where the list was unusable. The small number of undeliverables in the list that we purchased from you, were quickly and easily replaced. Thank you for your responsiveness.
                         </p>
                     </div>
-                    <cite>Lorem ipsum</cite>
+                    <cite class="cite">Greg Wood (COO)</cite>
+                    <br>
+                    
                 </blockquote>
             </div>
         
@@ -150,10 +163,12 @@
                     </span>
         
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <p>The product provided by your company has proven to be timely and accurate from our experience. Your customer service level and willingness to make things right if needed is top notch. Thank you! 
                         </p>
                     </div>
-                    <cite>Lorem ipsum</cite>
+                    <cite class="cite">G. Sean Williams, CPSM
+
+                        Vice President, Board of Directors Institute for Supply Management CV</cite>
                 </blockquote>
             </div>
         
@@ -165,9 +180,11 @@
                         </svg>
                     </span>
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Smart Ray Solutions had the answer to our problem! At a very reasonable price, we purchased a contact list for commercial accounts in our service area (by Zip Codes). The number of companies that had accurate contact information was well within what STS promised. We have a very good working relationship and are quite pleased with the information STS provided. </p>
                     </div>
-                    <cite>Lorem ipsum</cite>
+                    <cite class="cite">Dean Bemis
+
+                        Mendel Plumbing & Heating, Inc.</cite>
                 </blockquote>
             </div>
         
@@ -176,17 +193,18 @@
     </div>
 
     <!--FOOTER-->
-    <div class="container-fluid container-fluid-foot mx-auto" id="contact-us">
+    <div class="container-fluid container-fluid-foot mx-auto-foot" id="contact-us">
 
 
         <div class="row-foot">
-            <div class="line mb-3 mx-auto"></div>
-            <div class="d-md-flex px-5 justify-content-around bd-highlight col-md-12 pt-5 pb-5 mb-3">
+            <div class="d-md-flex px-5 justify-content-around bd-highlight col-md-12 pt-5 pb-5 mb-3 text-white">
                 <div class="p-2 flex-fill bd-highlight mb-5 mb-md-0">
-                    <h3>itCraft</h3> <small>Copyright &copy 2019</small>
+                    <img src="images/myknot-jpg.jpeg" class="myknot-logo-footer"alt=""> 
+                    <br>
+                    <small style="color: #00bfff;font-weight: bold;">Copyright &copy Myknot-Infosystem 2021</small>
                 </div>
-                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0">
-                    <h5 class="places">BYDGOCZCZ</h5>
+                <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0" style="color: #00bfff;font-weight: bold;">
+                    <h5 class="places" style="color: white;font-weight: bold;">BYDGOCZCZ</h5>
                     <p class="mb-0">Bydgoszcz Centrum Burnesa</p>
                     <p class="mb-0">ul Pzzenmdcwa 25, ibsura 24,</p>
                     <p class="mb-0">B5-7GB Bydgosrdz, Poland</p>
@@ -194,23 +212,24 @@
             </div>
             <div class="line mb-3 mx-auto"></div>
         </div>
-        <div class="row bottom-part">
+        <div class="row bottom-part text-white">
             <div class="d-lg-flex justify-content-between bd-highlight col-md-12 mb-5 px-5">
-                <div class="p-2 align-self-center flex-fill bd-highlight">
+                <div class=" align-self-center flex-fill bd-highlight">
                     <div class="fa fa-facebook px-2"></div>
                     <div class="fa fa-linkedin px-2"></div>
                     <div class="fa fa-twitter px-2"></div>
                     <div class="fa fa-instagram px-2"></div>
                 </div>
-                <div class="p-2 row flex-fill bd-highlight justify-content-left">
-                    <div class="p-2 d-lg-flex">
-                        <div class="p-2 flex-fill d-flex bd-highlight">Services</div>
-                        <div class="p-2 flex-fill d-flex bd-highlight">about-us</div>
-                        <div class="p-2 flex-fill d-flex bd-highlight">Home</div>
-                        <div class="p-2 flex-fill d-flex bd-highlight">Testimonials</div>
+                <div class="p-2 row flex-fill bd-highlight justify-content-left text-white">
+                    <div class=" d-lg-flex" style="color: #00bfff; font-weight: bold;">
+                        <div class="p-2 flex-fill d-flex bd-highlight">
+                            <a onclick="services()" class="footer-links">Services</a></div>
+                        <div class="p-2 flex-fill d-flex bd-highlight"><a onclick="aboutus()"  class="footer-links">about-us</a></div>
+                        <div class="p-2 flex-fill d-flex bd-highlight"><a onclick="home()" class="footer-links">Home</a></div>
+                        <div class="p-2 flex-fill d-flex bd-highlight"><a onclick="testimonial()" class="footer-links">Testimonials</a></div>
                     </div>
                 </div>
-                <div class="p-2 align-self-center flex-fill bd-highlight">
+                <div class=" align-self-center flex-fill bd-highlight">
                     <div class="fa fa-mobile px-2 grey-text">&nbsp;&nbsp;<span id="contact">888-777-666</span></div>
                     <div class="fa fa-envelope-o px-2 grey-text">&nbsp;&nbsp;info@abcd.in</div>
                 </div>
@@ -222,30 +241,38 @@
 
 
 <style>
-.nav-100{
-    background-color: #000000;
-background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-}
+
         .navbar {
     transition: all 0.4s;
 }
-
+.myknot-logo-nav{
+    width: 6rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 450px){
+    .myknot-logo-nav{
+    width: 5rem;
+    height: 2.6rem;
+    border-radius: 50%;
+}
+}
 .navbar .nav-link {
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
 }
 .navbar-toggler{
     padding: .25rem .75rem;
     font-size: 1.75rem;
     line-height: 1;
-    background-color: transparent;
     border: 1px solid transparent;
     border-radius: 0.25rem;
+    color: #54a0f1;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: grey;
+    color: black ;
     transition: 0.4s;
     text-decoration: none;
 }
@@ -262,15 +289,17 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 
 .navbar.active .nav-link {
     color: #555;
+    padding-bottom: 0.8rem;
+    font-size: 1rem;
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: black;
-    transition: 0.4s;
+    color: #65cff3 ;
+    transition: 0.3s;
     -webkit-transform: scale(1.0);
     -ms-transform: scale(1.0);
-    transform: scale(1.1);
+    transform: scale(1.05);
     text-decoration: none;
 }
 
@@ -287,48 +316,109 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 
     .navbar .navbar-brand, .navbar .nav-link {
         color: #555;
+        padding-bottom: 0.8rem;
+        font-size: 1rem;
     }
 }
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+    margin-top: 0.7rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.mx-auto-foot {
+    margin-left: auto!important;
+    margin-top: 0rem;
+    padding-left: 0.0rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.12rem;
+}
 .nav-100{
-    background-color: #000000;
-background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    background-image: url("images/architecture.jpg");
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+/* fallback for old browsers */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .below-nav{
-    height:100vh;
+
 
 }
 
 .display-4{
-    margin-top: 9rem;
-    font-size: 6rem;
-    margin-bottom:2rem;
-}
-.under-display{
+    margin-top: 12rem;
     font-size: 4rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 3px 3px 15px #000000;
 }
-@media only screen and (max-width: 450px){
-    .below-nav{
-    height:65vh;
+
+@media only screen and (max-width: 1030px){
+    .nav-100{
+    height:auto;
+
+}
+}
+@media only screen and (max-width: 550px){
+    .nav-100{
+    height:auto;
 
 }
 .display-4{
-    margin-top: 6rem;
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-top: 5.5rem;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
 }
 .under-display{
     font-size: 1.3rem;
 }
 }
-@media only screen and (max-width: 330px){
-    .below-nav{
-    height:59vh;
+@media only screen and (max-width: 450px){
+    .nav-100{
+    height:auto;
 
 }
 .display-4{
-    margin-top: 5rem;
+    margin-top: 4.1rem;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+}
+.under-display{
+    font-size: 1.3rem;
+}
+}
+@media only screen and (max-width: 380px){
+    .nav-100{
+    height:auto;
+
+}
+.display-4{
+    margin-top:2.5rem;
+    font-size: 2rem;
+    margin-bottom: 0rem;
+}
+.under-display{
+    font-size: 1rem;
+}
+
+}
+@media only screen and (max-width: 330px){
+    .nav-100{
+    height:auto;
+
+}
+.display-4{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
 }
 .under-display{
     font-size: 1rem;
@@ -336,6 +426,12 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 }
 .pt-5, .py-5 {
     padding-top: 1rem!important;
+}
+.pt-3, .py-3 {
+    padding-top: 0.5rem!important;
+}
+.pt-3, .py-3 {
+    padding-bottom: 0rem!important;
 }
 
  /* 
@@ -345,7 +441,7 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
         .about-us-heading{
             font-family: 'Barlow', sans-serif;
             font-weight: bolder;
-            font-size: 3rem;
+            font-size: 2.4rem;
             padding-top: 1rem;
             padding-bottom: 1rem;
             text-shadow: 1px 1px 4px #000000;
@@ -358,43 +454,57 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
             margin-right: auto;
             margin-left: auto;
             font-family: 'Barlow', sans-serif;
-        font-weight:bold;
-            background-color: #d387ab;
-        background-image: linear-gradient(315deg, #d387ab 0%, #b279a7 74%);
+        font-weight:500;
+        background-image: #457fca;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         }
+        @media only screen and (max-width: 550px){
+            .container-mod{
+            width: 100%;
+            padding-right: 4rem;
+            padding-left: 4rem;
+            margin-right: auto;
+            margin-left: auto;
+            font-family: 'Barlow', sans-serif;
+        font-weight:500;
+        background: #457fca;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    }
         @media only screen and (max-width: 500px){
             .container-mod{
                 width: 100%;
-    padding-right: 1rem;
+    padding-right: 2rem;
     padding-left: 2rem;
     margin-right: auto;
     margin-left: auto;
     font-family: 'Barlow', sans-serif;
-    font-weight: bold;
-    background-color: #d387ab;
-    background-image: linear-gradient(
-315deg
-, #d387ab 0%, #b279a7 74%);
+    font-weight: 500;
+    background: #457fca;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5691c8, #457fca); 
         }
         .about-us-heading {
             font-family: 'Barlow', sans-serif;
             font-weight: bolder;
-            font-size: 3rem;
+            font-size: 2.4rem;
             padding-top: 1rem;
             padding-bottom: 1rem;
             text-shadow: 1px 1px 4px #000000;
             border-bottom: 2px solid #ffffff;
         }
-        }
+}
         .pt-5, .py-5 {
             padding-top: 1rem!important;
         }
         
         #button {
           display: inline-block;
-          background-color: #fc9842;
-        background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
-        
+          background-color: #00bfff;
+          
           width: 50px;
           height: 50px;
           text-align: center;
@@ -420,6 +530,16 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
         #button:hover {
           cursor: pointer;
           background-color: #333;
+          
+        }
+        #button::after:hover {
+          content: "\f077";
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 2em;
+          line-height: 50px;
+          color:  #00bfff;
         }
         #button:active {
           background-color: #555;
@@ -436,140 +556,202 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
         * ==========================================
         *
         */
-        .container-fluid-card { max-width: 1200px; }
+        
  .services-heading{
             font-family: 'Barlow', sans-serif;
             font-weight: bolder;
-            font-size: 3rem;
+            font-size: 2.4rem;
             padding-top: 1rem;
-            text-shadow: 1px 1px 4px #000000;
+            text-shadow: 1px 1px 2px #000000;
             padding-bottom: 1rem;
             color: black;
+            border-bottom: 2px solid #00bfff;
+            margin-left: 7rem;
+            margin-right: 7rem;
+            
 }
-@media only screen and (max-width: 450px){
-    .services-heading{
-        font-family: 'Barlow', sans-serif;
-    font-weight: bolder;
-    font-size: 2rem;
-    padding-top: 2rem;
-    text-shadow: 1px 1px 4px #000000;
-    padding-bottom: 0rem;
-    color: black;
-}
-}
-.card-deck{
-    margin-bottom: 2rem;
-}
-.card {
-	background: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.services-desc{
     margin-top: 1rem;
-    margin-bottom: 2rem;
-    float: left;
-    width: 24%;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
 }
 @media only screen and (max-width: 500px){
-    .card-deck{
-        width: min-content;
-    }
-    .card {
-	background: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 2rem;
-    margin-left: 5rem;
-    width: 120%;
+    .services-heading{
+            font-family: 'Barlow', sans-serif;
+            font-weight: bolder;
+            font-size: 2.4rem;
+            padding-top: 1rem;
+            text-shadow: 1px 1px 2px #000000;
+            padding-bottom: 1rem;
+            color: black;
+            border-bottom: 2px solid  #00bfff;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            
+}
+    .services-desc{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
 }
 }
-@media only screen and (max-width: 380px){
-    .card-deck{
-        width: min-content;
-    }
-    .card {
-    background: #fff;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 60%);
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 2rem;
-    margin-left: 4.9rem;
-    width: 117%;
+@media (min-width: 1200px){
+.container {
+    max-width: 1440px;
 }
 }
-@media only screen and (max-width: 380px){
-    .card-deck{
-        width: min-content;
-    }
-    .card {
-    background: #fff;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 60%);
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 2rem;
-    margin-left: 4.0rem;
-    width: 111%;
+@media (min-width: 992px){
+    .container {
+    max-width: 1300px;
 }
 }
-@media only screen and (max-width: 330px){
-    .card-deck{
-        width: min-content;
-    }
-    .card {
-    background: #fff;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 60%);
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 2rem;
-    margin-left: 4.2rem;
-    width: 100%;
+@media (min-width: 768px){
+    .container {
+    max-width: 988px;
 }
 }
-.row {
+@media (min-width: 576px){
+    .container {
+    max-width: 1800px;
+}
+
+}
+
+.mt-2, .my-2 {
+    margin-top: 0rem!important;
+    margin-bottom: 0rem;
+background-color: white; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+img{
+  height:150px;
+  width:100%;
+}
+.card {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: 0px;
-    margin-left: -41px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: .25rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    height: 85%;
+}
+@media only screen and (max-width: 450px){
+    .card{
+        position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: .25rem;
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    }
+}
+.item{
+  padding-left:5px;
+  padding-right:5px;
+}
+.item-card{
+  transition:0.5s;
+  cursor:pointer;
+}
+.item-card-title{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+}
+.item-card-title i{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+  color:#ffa710
 }
 .card-title{
-    margin-bottom: 3rem;
+    color:#2159f7;
+    font-weight: bold;
+}
+.card-title i:hover{
+  transform: scale(1.25) rotate(100deg); 
+  color:#18d4ca;
+  
+}
+.card:hover{
+  transform: scale(1.05);
+  transition: 0.4s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+.card-text{ 
+    padding-bottom: 1rem;
+    padding-left: 0.7rem;
+    padding-right: 0.5rem;
 }
 
-    .service-para{
-        font-family: 'Barlow', sans-serif;
-        font-weight:bold;
-    }
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
 
 /*TESTIMONIALS*/
 .test-heading{
-            text-shadow: 1px 1px 4px #000000;
-            font-family: 'Barlow', sans-serif;
-            font-weight: bolder;
-            font-size: 3rem;
+    text-shadow: 1px 1px 4px #000000;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bolder;
+    font-size: 2.4rem;
+    margin-top: 0.5rem;
 
         }
         @media only screen and (max-width: 450px){
             .test-heading{
-            text-shadow: 1px 1px 4px #000000;
-            font-family: 'Barlow', sans-serif;
-            font-weight: bolder;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            margin-top: 1rem;
+                text-shadow: 1px 1px 4px #000000;
+                font-family: 'Barlow', sans-serif;
+                font-weight: bolder;
+                font-size: 2.4rem;
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
         }
         .quotes{
             display: inline-block;
@@ -587,10 +769,20 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
         }
         .text-left {
           text-align: left;
+          font-family: 'Roboto Condensed', sans-serif;
+          font-style: italic;
         }
+        .cite {
+            text-align: left;
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size: 0.9rem;
+          font-weight: bold;
+}
         .testimonials{
-            background-color: #7f5a83;
-        background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+            background: #2c3e50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         padding-top: 1rem;
         
         
@@ -689,19 +881,32 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 p {
     font-size: 14px
 }
-
-.container-fluid-foot {
-    background-color: #4527A0
+.p-2 {
+    padding-top: 0.5rem!important;
+    padding-bottom: 1rem;
 }
-
+.myknot-logo-footer{
+    width: 7rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.container-fluid-foot {
+    background-color: black;
+  
+}
+.footer-links{
+    cursor: pointer;
+}
 .top-part {
-    background-color: #512DA8
+    background-color:black;
 }
 
 .center-content {
     margin-top: 120px;
     margin-bottom: 120px
 }
+
 @media (max-width: 600.98px) {
     .row-foot{
     display: -webkit-box;
@@ -728,8 +933,8 @@ p {
 }
 
 .line {
-    border-top: 1px solid #7B1FA2;
-    width: 90% !important
+    border-top: 2px solid  #00bfff;
+    width: 90% !important;
 }
 
 .fa-mobile {
@@ -741,7 +946,7 @@ p {
 }
 
 .grey-text {
-    color: lightgrey
+    color:  #00bfff
 }
         
 </style>
