@@ -49,12 +49,12 @@
                 </div>
               </li>
             <li class="nav-item">
-              <a class="nav-link look text-uppercase font-weight-bold" href="about-us.php">ABOUT US</a>
+              <a class="nav-link look text-uppercase font-weight-bold" href="#">ABOUT US</a>
             </li>
          
             
             <li class="nav-item">
-              <a class="nav-link  text-uppercase font-weight-bold" href="contact-us.php">Contact</a>
+              <a class="nav-link  text-uppercase font-weight-bold" style="cursor: pointer;" onclick="contact()">Contact</a>
             </li>
           </ul>
         </div>
@@ -140,8 +140,8 @@
                 </div>
                 <div class="p-2 row flex-fill bd-highlight justify-content-left text-white">
                     <div class=" d-lg-flex" style="color: #00bfff; font-weight: bold;">
-                        <div class="p-2 flex-fill d-flex bd-highlight">
-                            <a onclick="services()" class="footer-links">Services</a></div>
+                       
+                            
                         <div class="p-2 flex-fill d-flex bd-highlight"><a onclick="aboutus()"  class="footer-links">About-Us</a></div>
                         <div class="p-2 flex-fill d-flex bd-highlight"><a href="index.html" class="footer-links" style="text-decoration: none; color: #00bfff;">Home</a></div>
                     </div>
@@ -540,6 +540,12 @@ background: linear-gradient(to right, #5691c8, #457fca);
 </style>
 
 <script>
+    function contact(){  //navigate to contact section
+            var element = document.getElementById("contact-us");
+            element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}); 
+        }
+
+
     $(document).ready(function() {
     $('#showmenu').click(function() {
             $('.hidden-content').slideToggle("fast");

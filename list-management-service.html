@@ -49,12 +49,12 @@
                 </div>
               </li>
             <li class="nav-item">
-              <a class="nav-link look text-uppercase font-weight-bold" href="about-us.php">ABOUT US</a>
+              <a class="nav-link look text-uppercase font-weight-bold" href="#">ABOUT US</a>
             </li>
          
             
             <li class="nav-item">
-              <a class="nav-link  text-uppercase font-weight-bold" href="contact-us.php">Contact</a>
+              <a class="nav-link  text-uppercase font-weight-bold" style="cursor: pointer;" onclick="contact()">Contact</a>
             </li>
           </ul>
         </div>
@@ -74,7 +74,9 @@
             <div class="heading-2">
                 <h4 >List Management Services</h4>
                 <p style="font-weight: bold;margin-top: 2rem;margin-bottom: 2rem;">Clean, validate and scrub your way to the best targets for an optimal business performance.</p>
+                <a id="button"></a>
                 <div class="content-para"  data-aos="fade-up" data-aos-duration="800" data-aos-offset="200" data-aos-once="true">
+                    
                     <p >
                         SmartRay solutions is a leading list management provider by offering the best performing lists for a better business relationship and increase in sales and profits. Our unique services enable you to target the best and valuable prospects.
                     </p>
@@ -183,8 +185,8 @@
                 </div>
                 <div class="p-2 row flex-fill bd-highlight justify-content-left text-white">
                     <div class=" d-lg-flex" style="color: #00bfff; font-weight: bold;">
-                        <div class="p-2 flex-fill d-flex bd-highlight">
-                            <a onclick="services()" class="footer-links">Services</a></div>
+                        
+                           
                         <div class="p-2 flex-fill d-flex bd-highlight"><a onclick="aboutus()"  class="footer-links">About-Us</a></div>
                         <div class="p-2 flex-fill d-flex bd-highlight"><a href="index.html" class="footer-links" style="text-decoration: none; color: #00bfff;">Home</a></div>
                     </div>
@@ -411,6 +413,60 @@ background-color: white;
     padding-right: 0rem;
 }
 }
+
+
+/*navigate to top button */
+
+#button {
+          display: inline-block;
+          background-color: #00bfff;
+          
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          border-radius: 4px;
+          position: fixed;
+          bottom: 30px;
+          right: 30px;
+          transition: background-color .3s, 
+            opacity .5s, visibility .5s;
+          opacity: 0;
+          visibility: hidden;
+          z-index: 2000;
+        }
+        #button::after {
+          content: "\f077";
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 2em;
+          line-height: 50px;
+          color: #fff;
+        }
+        #button:hover {
+          cursor: pointer;
+          background-color: #333;
+          
+        }
+        #button::after:hover {
+          content: "\f077";
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: normal;
+          font-size: 2em;
+          line-height: 50px;
+          color:  #00bfff;
+        }
+        #button:active {
+          background-color: #555;
+        }
+        #button.show {
+          opacity: 1;
+          visibility: visible;
+        }
+
+
+
 .content{
     background-image: #457fca;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
@@ -587,6 +643,29 @@ background: linear-gradient(to right, #5691c8, #457fca);
 </style>
 
 <script>
+
+function contact(){  //navigate to contact section
+            var element = document.getElementById("contact-us");
+            element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"}); 
+        }
+
+
+  //scroll to top
+  var btn = $('#button');
+        
+        $(window).scroll(function() {
+          if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+          } else {
+            btn.removeClass('show');
+          }
+        });
+        
+        btn.on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({scrollTop:0}, '300');
+        });
+
     $(document).ready(function() {
     $('#showmenu').click(function() {
             $('.hidden-content').slideToggle("fast");
