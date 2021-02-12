@@ -180,7 +180,7 @@
             <div class="line mb-3 mx-auto"></div>
         </div>
         <div class="row bottom-part text-white">
-            <div class="d-lg-flex justify-content-between bd-highlight col-md-12 mb-5 px-5">
+            <div class="d-lg-flex justify-content-between bd-highlight col-md-12 mb-5 px-5-bottom">
                 <div class=" align-self-center flex-fill bd-highlight">
                     <div class="fa fa-facebook px-2"></div>
                     <div class="fa fa-linkedin px-2"></div>
@@ -188,17 +188,17 @@
                     <div class="fa fa-instagram px-2"></div>
                 </div>
                 <div class="p-2 row flex-fill bd-highlight justify-content-left text-white">
-                    <div class=" d-lg-flex" style="color: #00bfff; font-weight: bold;">
-                        <div class="p-2 flex-fill d-flex bd-highlight">
-                            <a onclick="services()" class="footer-links">Services</a></div>
-                        <div class="p-2 flex-fill d-flex bd-highlight"><a onclick="aboutus()"  class="footer-links">about-us</a></div>
-                        <div class="p-2 flex-fill d-flex bd-highlight"><a onclick="home()" class="footer-links">Home</a></div>
+                    <div class=" d-lg-flex" style="font-weight: bold;">
+                        <div class="p-2 flex-fill d-flex bd-highlight footer-links">
+                            <a onclick="services()" >Services</a></div>
+                        <div class="p-2 flex-fill d-flex bd-highlight footer-links"><a onclick="aboutus()" >About us</a></div>
+                        <div class="p-2 flex-fill d-flex bd-highlight footer-links"><a onclick="home()" >Home</a></div>
                  
                     </div>
                 </div>
                 <div class=" align-self-center flex-fill bd-highlight">
-                    <div class="fa fa-mobile px-2 grey-text">&nbsp;&nbsp;<a href="tel:9353690229" style="text-decoration: none; font-weight: bold; color:white;font-family: 'Roboto Condensed', sans-serif;" id="contact">9353690229</a></div>
-                    <div class="fa fa-envelope-o px-2 grey-text">&nbsp;&nbsp;<a href="https://mail.google.com/mail/?view=cm&fs=1&to=Sales@myknot.online" target="_blank" style="text-decoration: none; font-weight: bold; color:white;font-family: 'Roboto Condensed', sans-serif;">Sales@myknot.online</a></div>
+                    <div class="fa fa-mobile px-2 grey-text">&nbsp;&nbsp;<a class="details" href="tel:9353690229" style="text-decoration: none; " id="contact">9353690229</a></div>
+                    <div class="fa fa-envelope-o px-2 grey-text">&nbsp;&nbsp;<a  class="details" href="https://mail.google.com/mail/?view=cm&fs=1&to=Sales@myknot.online" target="_blank" style="text-decoration: none;">Sales@myknot.online</a></div>
                 </div>
             </div>
         </div>
@@ -268,9 +268,7 @@
 .service{
     padding-bottom: .5rem;
 }
-.services:hover{
-    
-}
+
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
     color: black ;
@@ -355,10 +353,7 @@
  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-.below-nav{
 
-
-}
 
 .display-4{
     margin-top: 12rem;
@@ -882,6 +877,13 @@ background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, F
     padding-left: 4rem!important;
 }
 
+.pl-5, .px-5-bottom {
+    padding-left: 3rem!important;
+    padding-top: 2rem;
+}          
+.pb-5, .py-5 {
+    padding-bottom: 0rem!important;
+}
         /* FOOTER STYLES*/
         
 
@@ -904,6 +906,11 @@ background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, F
 }
 .footer-links{
     cursor: pointer;
+    color: white;
+}
+.footer-links:hover{
+    cursor: pointer;
+    color: #00bfff;
 }
 .top-part {
     background-color:black;
@@ -948,14 +955,31 @@ background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, F
     font-size: 20px
 }
 
-#contact {
-    font-size: 15px
-}
 
 .grey-text {
-    color:  #00bfff
+    color:  #00bfff;
 }
-        
+.details{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+     color:white;
+     font-family: 'Roboto Condensed', sans-serif;
+}
+.details:hover{
+    color: #00bfff;
+}
+@media (max-width: 385px) {  
+    .details{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+     color:white;
+     font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+}     
 </style>
 <script>
            $(function () {
