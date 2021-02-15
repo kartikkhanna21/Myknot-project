@@ -90,16 +90,15 @@
 
         <div class="row-foot" >
             <div class="d-md-flex px-5 justify-content-around bd-highlight col-md-12 pt-5 pb-5 mb-3 text-white"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-once="true">
-                <div class="p-2 flex-fill bd-highlight mb-5 mb-md-0">
-                    <img src="images/myknot-logo-compressed.png" class="myknot-logo-footer"alt=""> 
-                    <br>
-                    <small style="color: #00bfff;font-weight: bold;">Copyright &copy Myknot-Infosystem 2021</small>
-                </div>
                 <div class="p-2 flex-fill bd-highlight mb-3 mb-md-0 address" style="color: #00bfff;font-weight: bold;">
                     <h5 class="places" style="color: #00bfff;font-weight: bold;"> Address</h5>
                     <p class="mb-0" style="color: white;">E9 4th J Cross New Guruppanpalaya</p>
                     <p class="mb-0" style="color: white;">Krishnappa Garden Near Lakshmi Theater </p>
                     <p class="mb-0" style="color: white;"> Bangalore Bangalore Ka 560029 IN</p>
+                </div>
+                <div class=" align-self-center flex-fill bd-highlight">
+                    <div class="fa fa-mobile px-2 grey-text">&nbsp;&nbsp;<a class="details" href="tel:9353690229" style="text-decoration: none; " id="contact">9353690229</a></div>
+                    <div class="fa fa-envelope-o px-2 grey-text">&nbsp;&nbsp;<a  class="details" href="https://mail.google.com/mail/?view=cm&fs=1&to=Sales@myknot.online" target="_blank" style="text-decoration: none;">Sales@myknot.online</a></div>
                 </div>
             </div>
             <div class="line mb-3 mx-auto"></div>
@@ -120,10 +119,15 @@
                         <div class="p-2 flex-fill d-flex bd-highlight"><a href="index.html" class="footer-links" style="text-decoration: none; ">Home</a></div>
                     </div>
                 </div>
-                <div class=" align-self-center flex-fill bd-highlight">
-                    <div class="fa fa-mobile px-2 grey-text">&nbsp;&nbsp;<a class="details" href="tel:9353690229" style="text-decoration: none; " id="contact">9353690229</a></div>
-                    <div class="fa fa-envelope-o px-2 grey-text">&nbsp;&nbsp;<a  class="details" href="https://mail.google.com/mail/?view=cm&fs=1&to=Sales@myknot.online" target="_blank" style="text-decoration: none;">Sales@myknot.online</a></div>
+              
+            </div>
+            <div class="container copyright">
+                <div class="flex-fill bd-highlight mb-md-0 text-center">
+                    <img src="images/myknot-logo-compressed.png" class="myknot-logo-footer" alt=""> 
+                    <br>
+                    <small style="color: #00bfff;font-weight: bold;">Copyright &copy Myknot-Infosystem 2021</small>
                 </div>
+    
             </div>
         </div>
     </div>
@@ -141,8 +145,8 @@
 }
 @media only screen and (max-width: 450px){
     .myknot-logo-nav{
-        width: 7rem;
-    height: 3.6rem;
+        width: 8rem;
+        height: 4.1rem;
 }
 }
 @media only screen and (max-width: 450px){
@@ -448,16 +452,30 @@ background: linear-gradient(to right, #5691c8, #457fca);
 }
         /* FOOTER STYLES*/
         .pl-5, .px-5 {
-    padding-left: 4rem!important;
-}
-
-.pl-5, .px-5-bottom {
-    padding-left: 3rem!important;
-    padding-top: 2rem;
-}          
-.pb-5, .py-5 {
-    padding-bottom: 0rem!important;
-}
+            padding-left: 4rem!important;
+        }         
+        .pl-5, .px-5-bottom {
+            padding-left: 3rem!important;
+            padding-top: 1rem;
+        }   
+        .pt-5, .py-5 {
+            padding-top: 1rem!important;
+        }
+        .pr-5, .px-5 {
+        padding-right: 1.5rem!important;
+        }
+        .mb-3, .my-3 {
+            margin-bottom: 1.5rem!important;
+        }
+        .mb-5, .my-5 {
+             margin-bottom: 0rem!important;
+            }          
+        .pb-5, .py-5 {
+            padding-bottom: 0rem!important;
+        }
+        .copyright{
+            margin-bottom: 1rem;
+            }
 .address{
     font-size: 17px;
 }
@@ -468,7 +486,8 @@ background: linear-gradient(to right, #5691c8, #457fca);
 .mx-auto-foot {
     margin-left: auto!important;
     margin-top: 0rem;
-    padding-left: 0.0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.12rem;
 }
@@ -526,7 +545,7 @@ background: linear-gradient(to right, #5691c8, #457fca);
 
 .line {
     border-top: 2px solid  #00bfff;
-    width: 90% !important;
+    width: 100% !important;
 }
 
 .fa-mobile {
